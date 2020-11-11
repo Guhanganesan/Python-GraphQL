@@ -9,6 +9,3 @@ class Query(graphene.ObjectType):
 schema = graphene.Schema(query=Query)
 result = schema.execute('{ hello }')
 print(result.data['hello']) # "Hello World"
-
-
-
